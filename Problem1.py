@@ -10,7 +10,7 @@ class Problem1:
         pass
     
     @staticmethod
-    def runProblem1():
+    def runProblem1(self):
         #Main variables
         nums = List[2, 7, 11, 15]
         target = 9
@@ -22,7 +22,7 @@ class Problem1:
         print(returnArray)
     
     @staticmethod
-    def twoSumBruteForce(nums: List[int], target: int) -> List[int]:     
+    def twoSumBruteForce(self, nums: List[int], target: int) -> List[int]:     
         for i in range(len(nums)):
             for j in range(len(nums)):
                 if i != j:
@@ -33,7 +33,7 @@ class Problem1:
         return List[0, 0]
     
     @staticmethod 
-    def twoSumEfficient(nums: List[int], target: int) -> List[int]:
+    def twoSumEfficient(self, nums: List[int], target: int) -> List[int]:
         tempDict = {}
         
         for i in range(len(nums)):
