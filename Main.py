@@ -3,6 +3,8 @@
 
 from Problem1 import Problem1
 
-
-def Main():
+def main():
     Problem1.runProblem1()
+
+if __name__ == "__main__":
+    main()
