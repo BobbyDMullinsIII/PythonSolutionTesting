@@ -16,7 +16,8 @@ class Problem1:
         target = 9
         
         #Execute solution
-        returnArray = Problem1.twoSumBruteForce(nums, target)
+        #returnArray = Problem1.twoSumBruteForce(nums, target)
+        returnArray = Problem1.twoSumEfficient(nums, target)
         
         #Solution printed out to console
         print(returnArray)
