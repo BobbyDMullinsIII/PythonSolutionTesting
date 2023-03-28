@@ -17,12 +17,12 @@ class Problem3:
         #Solution printed out to console
         print(substringLength)
     
-    @staticmethod
-    def lengthOfLongestSubstring(s: str):
+    
+    def lengthOfLongestSubstring(s: str) -> int:
         checkStr = ""
         substringLength = -1
         
-        if len(s.strip()) == 0 | len(s) == 0:
+        if len(s.strip()) == 0 or len(s) == 0:
             return 0
         
         if len(s) == 0:

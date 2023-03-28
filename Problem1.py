@@ -22,7 +22,7 @@ class Problem1:
         #Solution printed out to console
         print(returnArray)
     
-    @staticmethod
+    
     def twoSumBruteForce(nums: List[int], target: int) -> List[int]:     
         for i in range(len(nums)):
             for j in range(len(nums)):
@@ -33,7 +33,7 @@ class Problem1:
         #Will only return this if two separate indices equaling target are not found
         return List[0, 0]
     
-    @staticmethod 
+    
     def twoSumEfficient(nums: List[int], target: int) -> List[int]:
         tempDict = {}
         
