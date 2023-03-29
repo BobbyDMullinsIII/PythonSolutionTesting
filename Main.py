@@ -17,7 +17,7 @@ from Problem13 import Problem13
 from Problem14 import Problem14
 
 def main():
-    Problem6.runProblem6()
+    Problem9.runProblem9()
 
 if __name__ == "__main__":
     main()

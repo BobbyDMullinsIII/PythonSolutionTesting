@@ -23,11 +23,16 @@ class Problem1:
         print(returnArray)
     
     
-    def twoSumBruteForce(nums: List[int], target: int) -> List[int]:     
+    def twoSumBruteForce(nums: List[int], target: int) -> List[int]:  
+        #Double for loop to iterate through each value and compare to every other value
+        #(will result in comparisons with the same indices duplicating a few times)   
         for i in range(len(nums)):
             for j in range(len(nums)):
+                #Do not compare if same index
                 if i != j:
+                    #Check if equal to target
                     if (nums[i] + nums[j]) == target:
+                        #Returns indices if two separate indices to equal target are found
                         return [i, j]
                    
         #Will only return this if two separate indices equaling target are not found
@@ -37,12 +42,15 @@ class Problem1:
     def twoSumEfficient(nums: List[int], target: int) -> List[int]:
         tempDict = {}
         
+        #Loop through array only one time using dictionary
         for i in range(len(nums)):
             
             indiceOneVal = nums[i]
             indiceTwoVal = target - indiceOneVal
             
-            if indiceTwoVal in tempDict:    
+            #Check if equal to target
+            if indiceTwoVal in tempDict:   
+                #returns indices if two separate indices to equal target are found 
                 index = tempDict[indiceTwoVal]
                 return [index, i]
             
